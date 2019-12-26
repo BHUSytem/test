@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-bottom: 200px;  /*边距底部*/
+}
+
+/******************************头部—start**************************/
+#header {
+    height:33px;
+  /* background-color:red;*/
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 40px;     /*底边距*/
+}
+#header a{
+    color: #555555;   /*头部所有字体颜色*/
+    font-size:13px;   /*字体大小13*/
+   /* margin-left: 10px */ /*左边距10*/
+}
+#header .header-left{
+    width: 270px;  /*宽度*/
+    height: 33px;  /*高度*/
+    float: left;   /*向左浮动*/
+    line-height: 33px;  /*线条高度*/
+}
+#header .header-left a{
+    margin-left: 8px;   /*左边距*/
+}
+#header .header-right{
+    width: 600px;
+    height: 33px;
+   /* background-color: green;*/
+    float:right;         /*向右浮动*/
+    text-align: right;  /*文本对齐*/
+    line-height: 33px;   /*线条高度*/
+}
+
+
+
+#header .header-right a{
+    margin-right: 15px;    /*右边距*/
+    font-weight: bolder    /*文本宽度*/
+}
+#header .header-right a.more-product{
+    background-color: #398bfb;   /*背景色*/
+    /*!*行内--> 行内-块级*/
+    display:inline-block;  /*显示 撑出*/
+    width: 80px;
+    height: 31px;
+    line-height: 33px;     /*线条高度*/
+    text-align: center;   /*文本对齐*/
+   /* color: skyblue;*/       /*颜色*/
+    text-decoration: none;  /*文本装饰 取消下划线*/
+    color: #ffffff; /*文本字体白色*/
+
+    vertical-align: top;
+}
+
+
+/******************************头部—end**************************/
+
+
+/******************************搜素—start**************************/
+#content {
+    /* height: 130px;*/
+    /*background-color: green;*/
+    width: 641px;
+    height: 189px;
+    margin: 0 auto;
+}
+#content .logo{
+    /*background-color:red;*/
+    text-align: center;
+    width: 641px;
+    height: 112px;
+}
+#content .logo img{
+    width: 270px;
+    height: 112px;
+}
+#content .search{
+    width: 100%;
+    height: 77px;
+   /* background-color:skyblue;*/
+    padding-top: 10px;
+}
+#content .search form{
+    width: 100%;
+    height: 44px;
+   /* background-color: #fff;*/
+}
+#content .search form .search-input{
+    width: 536px;
+    height: 44px;
+    padding-left: 8px;
+
+    /*去除外边框*/
+    outline: none;
+    border: 1px solid #ebebeb;
+    float: left;
+}
+#content .search form .search-input:focus{
+    border-color:#398bfb;
+}
+#content .search-submit{
+    width: 105px;
+    height: 44px;
+    background-color:#398bfb;
+    border: none;
+    float: left;
+    color: #ffffff;
+    font-size: 18px;
+
+    /*去除外边框*/
+    outline: none;
+}
+
+    /******************************搜素—end**************************/
+
+/******************************列表—start**************************/
+#list{
+    width: 893px;
+    height: 642px;
+    border: 1px solid #ebebeb;
+    /*background-color: skyblue;*/
+    margin: 0 auto;
+
+}
+#list .list-head{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ebebeb;
+}
+#list .list-head .list-head-left{
+    float: left;
+    font-size: 0;     /*文本样式  解决空白留白的问题*/
+}
+#list .list-head .list-head-left a{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+   /* background-color: red;*/
+    font-size: 14px;  /*文本样式   解决空白留白的问题*/
+    text-decoration: none;
+    padding: 0 10px;
+        /*color: #555555;*/
+    vertical-align:top;   /*垂直对齐 顶部*/
+}
+#list .list-head .list-head-left a img,
+#list .list-head .list-head-left a span{
+    vertical-align: middle;
+}
+#list .list-head .list-head-left a:hover{         /*鼠标进入 hover*/
+    background-color: #cccccc;
+} 
+
+
+#list .list-head .list-head-right{
+    float: right;
+    margin-right: 10px;
+}
+#list .list-head .list-head-right img{
+    vertical-align: middle;
+
+}
+     /*列表内容*/
+#list .list-content{
+
+}
+
+#list .list-content .list-content-left{
+    width: 575px;
+    height: 600px;
+    /*background-color: red;*/
+    float: left;
+    padding: 10px 5px 5px 10px;     /*间距*/
+}
+#list .list-content .list-content-left .list-content-cell1{
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 5px;    /*底边距 */
+}
+#list .list-content .list-content-left .list-content-cell1 h3{
+    margin-bottom: 10px;
+}
+
+#list .list-content .list-content-left .list-content-cell1 p{
+    margin: 3px 0;           /*边距*/
+    /*background-color:red;*/
+    color: #555555;
+    font-size: 12px;
+}
+#list .list-content .list-content-left .list-content-cell2{
+    padding: 20px 0;
+    height: 160px;
+    border-bottom: 1px solid #ebebeb;
+}
+#list .list-content .list-content-left .list-content-cell2 .cell-img{
+    float: left;
+}
+#list .list-content .list-content-left .list-content-cell2 .cell-title{
+    padding: 20px;
+   /*background-color: red;*/
+    margin-left: 20px;
+    float: left;
+    width: 360px;
+
+}
+#list .list-content .list-content-left .list-content-cell2 h3{
+    margin-bottom: 10px;
+}
+
+#list .list-content .list-content-left .list-content-cell2 p{
+    margin: 3px 0;           /*边距*/
+    /*background-color:red;*/
+    color: #555555;
+    font-size: 12px;
+}
+#list .list-content .list-content-right{
+    width: 315px;
+    height: 600px;
+    /*background-color: red;*/
+    float: right;
+
+
+
+
+}
+#list .list-content .list-content-right .list-content-right-top{
+    height: 60px;
+    width: 315px;
+   /* background-color:green;*/
+    padding: 20px;
+}
+#list .list-content .list-content-right .list-content-right-top h4{
+        float: left;
+
+}
+#list .list-content .list-content-right .list-content-right-top div{
+    float: right;
+}
+#list .list-content .list-content-right .list-content-right-top div img，
+#list .list-content .list-content-right .list-content-right-top div span {
+    vertical-align: middle;     /*在盒子中全部对齐*/
+}
+#list .list-content .list-content-right .list-content-right-body{
+    background-color:red;
+    padding: 0 20px;
+}
+#list .list-content .list-content-right .list-content-right-body ul{
+    list-style: none;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+
+    color:#555555;
+    font-size: 14px;
+}
+
+/******************************列表—end**************************/
